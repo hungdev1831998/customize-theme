@@ -40,7 +40,6 @@ function initMap() {
 //   }, 2000);
 
  setTimeout(() => {
-    console.log("hehe 1")
     searchStores();
   const searchContainerElm = document.querySelector(".search-container");
   const storesListContainerElm = document.querySelector(
@@ -65,7 +64,6 @@ function searchStores() {
   } else {
     foundStores = stores;
   }
-  console.log("foundStores", foundStores);
   clearLocations();
   displayStores(foundStores);
   showStoresMarkers(foundStores);
@@ -151,30 +149,22 @@ function createMarker(latlng, name, address, index) {
     
     `;
 
-  console.log("map", map);
-  console.log("latlng", latlng);
   var marker = new google.maps.Marker({
     map: map,
     position: latlng,
     label: index.toString(),
   });
   google.maps.event.addListener(marker, "click", function () {
-    console.log("asdasd 1");
     infoWindow.setContent(html);
     infoWindow.open(map, marker);
   });
   markers.push(marker);
-  console.log("markers", markers);
 }
 
 function setOnClickListener() {
-  console.log("markers 2", markers);
   var storeElements = document.querySelectorAll(".store-container");
-  console.log("storeElements", storeElements);
   storeElements.forEach(function (elem, index) {
-    console.log("elem 2", elem);
     elem.addEventListener("click", function () {
-      console.log("asdasd 2", markers);
       new google.maps.event.trigger(markers[index], "click");
     });
   });
