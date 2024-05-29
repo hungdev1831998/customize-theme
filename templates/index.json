@@ -74,6 +74,34 @@
         "padding_bottom": 0
       }
     },
+    "countdown_timer": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Demo - Countdown Timer",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your store location with customers. Describe the store location, show popup information of the store, help customers easily find stores based on postal code.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "store_locator": {
       "type": "store-locator",
       "blocks": {
@@ -229,6 +257,7 @@
   },
   "order": [
     "image_banner",
+    "countdown_timer",
     "store_locator",
     "rich_text",
     "featured_collection",

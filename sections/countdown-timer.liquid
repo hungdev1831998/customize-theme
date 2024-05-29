@@ -1,6 +1,6 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 
-{{ 'store-locator.css' | asset_url | stylesheet_tag }}
+{{ 'countdown-timer.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -96,64 +96,109 @@
   </div>
 </div>
 
-<div id="demo-store-locator">
-  {% comment %} <p>Demo - Store Locator</p> {% endcomment %}
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-      <script src="{{ 'store-data.js' | asset_url }}" defer="defer"></script>
-    </head>
-    <body>
-      {% comment %} <div class="store-locator-title">Store Locator</div> {% endcomment %}
-      <div class="search-container">
-        <div class="search">
-          <input id="zip-code-input" type="text" placeholder="Enter zip">
-          <i class="fas fa-search" onclick="searchStores()"></i>
-        </div>
-      </div>
-      <div class="stores-list-container">
-        <div class="stores-list">
-          <div class="store-container">
-            <div class="store-info-container">
-              <div class="store-address">
-                <span>8480 Beverly Blvd</span>
-                <span>Los Angeles, CA 90048</span>
-              </div>
-              <div class="store-phone-number">345-289-5434</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Launch countdown timer</title>
+  </head>
+
+  <body>
+    <script src="{{ 'countdown-timer.js' | asset_url }}" defer="defer"></script>
+    <div id="cdt">
+      <div class='cdt-main'>
+        <h1>We're launching soon</h1>
+        <div class="cards">
+          <div class="card days">
+            <div class="flip-card">
+              <div class="top-half">00</div>
+              <div class="bottom-half">00</div>
             </div>
-            <div class="store-number-container">
-              <div class="store-number">1</div>
+            <p>Days</p>
+          </div>
+
+          <div class="card hours">
+            <div class="flip-card">
+              <div class="top-half">00</div>
+              <div class="bottom-half">00</div>
             </div>
+            <p>Hours</p>
+          </div>
+
+          <div class="card minutes">
+            <div class="flip-card">
+              <div class="top-half">00</div>
+              <div class="bottom-half">00</div>
+            </div>
+            <p>Minutes</p>
+          </div>
+
+          <div class="card seconds">
+            <div class="flip-card">
+              <div class="top-half">00</div>
+              <div class="bottom-half">00</div>
+            </div>
+            <p>Seconds</p>
           </div>
         </div>
       </div>
-      <div id="map"></div>
-      {% comment %}
-         <script
-          async
-          defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoNI-ntFm96HlB2u3QYwQPyGyjK3bEiXA&callback=initMap"
-        ></script>
-      {% endcomment %}
+      <div class="cdt-footer">
+        <div class="media">
+          <a href="#">
+            <img
+              srcset="
+                {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                {{ article.image | image_url }} {{ article.image.width }}w
+              "
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+              src="{{ article.image | image_url: width: 1100 }}"
+              loading="eager"
+              fetchpriority="high"
+              width="{{ article.image.width }}"
+              height="{{ article.image.height }}"
+              alt="{{ article.image.alt | escape }}"
+            >
 
-      <script src="{{ 'store-locator.js' | asset_url }}" defer="defer"></script>
-      <script> 
-        var intervalInitMap = setInterval(() => {
-          if (initMap) {
-            var script = document.createElement('script');
-            script.src =
-              'https://maps.googleapis.com/maps/api/js?key=AIzaSyAoNI-ntFm96HlB2u3QYwQPyGyjK3bEiXA&callback=initMap';
-            script.async = true;
-            script.defer = true;
-            document.body.appendChild(script);
-            clearInterval(intervalInitMap);
-          }
-        }, 1000);
-      </script>
-    </body>
-  </html>
-</div>
+            <img
+              srcset="https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/icon-facebook.svg"
+              loading="eager"
+              fetchpriority="high"
+              alt="facebook icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              srcset="https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/icon-instagram.svg"
+              loading="eager"
+              fetchpriority="high"
+              alt="instagram icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              srcset="https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/icon-pinterest.svg"
+              loading="eager"
+              fetchpriority="high"
+              alt="pinterest icon"
+            >
+          </a>
+        </div>
+        <div class="femc">
+          Challenge by <a href="https://github.com/hungdev1831998" target="_blank">Frontend Mentor</a>. Coded
+          by <a href="https://github.com/hungdev1831998" target="_blank">Hung Huynh</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
 {% schema %}
 {
