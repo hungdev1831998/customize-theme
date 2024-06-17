@@ -2406,6 +2406,222 @@
         "name": "Văn bản đa dạng thức"
       }
     },
+    "store-locator": {
+      "name": "Văn bản đa dạng thức",
+      "settings": {
+        "full_width": {
+          "label": "Làm cho mục có chiều rộng đầy đủ"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Bên trái"
+          },
+          "options__2": {
+            "label": "Ở giữa"
+          },
+          "options__3": {
+            "label": "Bên phải"
+          },
+          "label": "Vị trí nội dung trên màn hình nền",
+          "info": "Vị trí được tự động tối ưu hóa cho thiết bị di động."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Bên trái"
+          },
+          "options__2": {
+            "label": "Ở giữa"
+          },
+          "options__3": {
+            "label": "Bên phải"
+          },
+          "label": "Căn chỉnh nội dung"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Tiêu đề",
+          "settings": {
+            "heading": {
+              "label": "Tiêu đề"
+            }
+          }
+        },
+        "text": {
+          "name": "Văn bản",
+          "settings": {
+            "text": {
+              "label": "Mô tả"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Nút",
+          "settings": {
+            "button_label_1": {
+              "label": "Nhãn nút thứ nhất",
+              "info": "Để trống nhãn này để ẩn nút."
+            },
+            "button_link_1": {
+              "label": "Liên kết trên nút thứ nhất"
+            },
+            "button_style_secondary_1": {
+              "label": "Sử dụng kiểu nút viền ngoài"
+            },
+            "button_label_2": {
+              "label": "Nhãn nút thứ hai",
+              "info": "Để trống nhãn này để ẩn nút."
+            },
+            "button_link_2": {
+              "label": "Liên kết trên nút thứ hai"
+            },
+            "button_style_secondary_2": {
+              "label": "Sử dụng kiểu nút viền ngoài"
+            }
+          }
+        },
+        "caption": {
+          "name": "Phụ đề",
+          "settings": {
+            "text": {
+              "label": "Văn bản"
+            },
+            "text_style": {
+              "label": "Kiểu văn bản",
+              "options__1": {
+                "label": "Tiêu đề phụ"
+              },
+              "options__2": {
+                "label": "Chữ viết hoa"
+              }
+            },
+            "caption_size": {
+              "label": "Cỡ chữ",
+              "options__1": {
+                "label": "Nhỏ"
+              },
+              "options__2": {
+                "label": "Trung bình"
+              },
+              "options__3": {
+                "label": "Lớn"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Văn bản đa dạng thức"
+      }
+    },
+    "countdown-timer": {
+      "name": "Văn bản đa dạng thức",
+      "settings": {
+        "full_width": {
+          "label": "Làm cho mục có chiều rộng đầy đủ"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Bên trái"
+          },
+          "options__2": {
+            "label": "Ở giữa"
+          },
+          "options__3": {
+            "label": "Bên phải"
+          },
+          "label": "Vị trí nội dung trên màn hình nền",
+          "info": "Vị trí được tự động tối ưu hóa cho thiết bị di động."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Bên trái"
+          },
+          "options__2": {
+            "label": "Ở giữa"
+          },
+          "options__3": {
+            "label": "Bên phải"
+          },
+          "label": "Căn chỉnh nội dung"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Tiêu đề",
+          "settings": {
+            "heading": {
+              "label": "Tiêu đề"
+            }
+          }
+        },
+        "text": {
+          "name": "Văn bản",
+          "settings": {
+            "text": {
+              "label": "Mô tả"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Nút",
+          "settings": {
+            "button_label_1": {
+              "label": "Nhãn nút thứ nhất",
+              "info": "Để trống nhãn này để ẩn nút."
+            },
+            "button_link_1": {
+              "label": "Liên kết trên nút thứ nhất"
+            },
+            "button_style_secondary_1": {
+              "label": "Sử dụng kiểu nút viền ngoài"
+            },
+            "button_label_2": {
+              "label": "Nhãn nút thứ hai",
+              "info": "Để trống nhãn này để ẩn nút."
+            },
+            "button_link_2": {
+              "label": "Liên kết trên nút thứ hai"
+            },
+            "button_style_secondary_2": {
+              "label": "Sử dụng kiểu nút viền ngoài"
+            }
+          }
+        },
+        "caption": {
+          "name": "Phụ đề",
+          "settings": {
+            "text": {
+              "label": "Văn bản"
+            },
+            "text_style": {
+              "label": "Kiểu văn bản",
+              "options__1": {
+                "label": "Tiêu đề phụ"
+              },
+              "options__2": {
+                "label": "Chữ viết hoa"
+              }
+            },
+            "caption_size": {
+              "label": "Cỡ chữ",
+              "options__1": {
+                "label": "Nhỏ"
+              },
+              "options__2": {
+                "label": "Trung bình"
+              },
+              "options__3": {
+                "label": "Lớn"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Văn bản đa dạng thức"
+      }
+    },
     "apps": {
       "name": "Ứng dụng",
       "settings": {

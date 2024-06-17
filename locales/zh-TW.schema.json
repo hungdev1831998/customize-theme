@@ -2406,6 +2406,222 @@
         "name": "RTF 文字"
       }
     },
+    "store-locator": {
+      "name": "RTF 文字",
+      "settings": {
+        "full_width": {
+          "label": "讓區段呈現全寬度"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "靠左"
+          },
+          "options__2": {
+            "label": "置中"
+          },
+          "options__3": {
+            "label": "靠右"
+          },
+          "label": "電腦版內容位置",
+          "info": "行動版會自動調整為最佳位置。"
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "靠左"
+          },
+          "options__2": {
+            "label": "置中"
+          },
+          "options__3": {
+            "label": "靠右"
+          },
+          "label": "內容對齊"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": {
+              "label": "標題"
+            }
+          },
+          "name": "標題"
+        },
+        "text": {
+          "settings": {
+            "text": {
+              "label": "說明"
+            }
+          },
+          "name": "文字"
+        },
+        "buttons": {
+          "settings": {
+            "button_label_1": {
+              "label": "第一個按鈕標籤",
+              "info": "將標籤留白以隱藏按鈕。"
+            },
+            "button_link_1": {
+              "label": "第一個按鈕連結"
+            },
+            "button_style_secondary_1": {
+              "label": "使用外框按鈕樣式"
+            },
+            "button_label_2": {
+              "label": "第二個按鈕標籤",
+              "info": "將標籤留白以隱藏按鈕。"
+            },
+            "button_link_2": {
+              "label": "第二個按鈕連結"
+            },
+            "button_style_secondary_2": {
+              "label": "使用外框按鈕樣式"
+            }
+          },
+          "name": "按鈕"
+        },
+        "caption": {
+          "name": "說明",
+          "settings": {
+            "text": {
+              "label": "文字"
+            },
+            "text_style": {
+              "label": "文字樣式",
+              "options__1": {
+                "label": "副標題"
+              },
+              "options__2": {
+                "label": "大寫"
+              }
+            },
+            "caption_size": {
+              "label": "文字大小",
+              "options__1": {
+                "label": "小"
+              },
+              "options__2": {
+                "label": "中"
+              },
+              "options__3": {
+                "label": "大"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "RTF 文字"
+      }
+    },
+    "countdown-timer": {
+      "name": "RTF 文字",
+      "settings": {
+        "full_width": {
+          "label": "讓區段呈現全寬度"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "靠左"
+          },
+          "options__2": {
+            "label": "置中"
+          },
+          "options__3": {
+            "label": "靠右"
+          },
+          "label": "電腦版內容位置",
+          "info": "行動版會自動調整為最佳位置。"
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "靠左"
+          },
+          "options__2": {
+            "label": "置中"
+          },
+          "options__3": {
+            "label": "靠右"
+          },
+          "label": "內容對齊"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": {
+              "label": "標題"
+            }
+          },
+          "name": "標題"
+        },
+        "text": {
+          "settings": {
+            "text": {
+              "label": "說明"
+            }
+          },
+          "name": "文字"
+        },
+        "buttons": {
+          "settings": {
+            "button_label_1": {
+              "label": "第一個按鈕標籤",
+              "info": "將標籤留白以隱藏按鈕。"
+            },
+            "button_link_1": {
+              "label": "第一個按鈕連結"
+            },
+            "button_style_secondary_1": {
+              "label": "使用外框按鈕樣式"
+            },
+            "button_label_2": {
+              "label": "第二個按鈕標籤",
+              "info": "將標籤留白以隱藏按鈕。"
+            },
+            "button_link_2": {
+              "label": "第二個按鈕連結"
+            },
+            "button_style_secondary_2": {
+              "label": "使用外框按鈕樣式"
+            }
+          },
+          "name": "按鈕"
+        },
+        "caption": {
+          "name": "說明",
+          "settings": {
+            "text": {
+              "label": "文字"
+            },
+            "text_style": {
+              "label": "文字樣式",
+              "options__1": {
+                "label": "副標題"
+              },
+              "options__2": {
+                "label": "大寫"
+              }
+            },
+            "caption_size": {
+              "label": "文字大小",
+              "options__1": {
+                "label": "小"
+              },
+              "options__2": {
+                "label": "中"
+              },
+              "options__3": {
+                "label": "大"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "RTF 文字"
+      }
+    },
     "apps": {
       "name": "應用程式",
       "settings": {

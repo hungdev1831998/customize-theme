@@ -1,7 +1,6 @@
 // window.onload = function () {
 //   displayStores();
 // };
-// similar to below function
 
 window.onload = () => {};
 
@@ -41,29 +40,53 @@ function initMap() {
 
  setTimeout(() => {
     searchStores();
-  const searchContainerElm = document.querySelector(".search-container");
-  const storesListContainerElm = document.querySelector(
-    ".stores-list-container"
-  );
+    const searchContainerElm = document.querySelector(".search-container");
+    const storesListContainerElm = document.querySelector(
+      ".stores-list-container"
+    );
     if (searchContainerElm) searchContainerElm.style.display = "flex";
     if (storesListContainerElm) storesListContainerElm.style.display = "flex";
     // clearInterval(searchInterval);
   }, 2000);
 }
 
+// function searchStores() {
+//   var foundStores = [];
+//   var zipCode = document.getElementById("zip-code-input").value;
+//   console.log("zipCode", zipCode)
+//   console.log("stores", stores)
+//   if (zipCode) {
+//     for (var store of stores) {
+//       var postal = store["address"]["postalCode"].substring(0, 5);
+//       if (postal == zipCode) {
+//         foundStores.push(store);
+//       }
+//     }
+//   } else {
+//     foundStores = stores;
+//   }
+//   console.log("foundStores", foundStores)
+//   clearLocations();
+//   displayStores(foundStores);
+//   showStoresMarkers(foundStores);
+//   setOnClickListener();
+// }
+
 function searchStores() {
   var foundStores = [];
-  var zipCode = document.getElementById("zip-code-input").value;
-  if (zipCode) {
-    for (var store of stores) {
+  var searchInput = document.getElementById("zip-code-input").value.trim().toLowerCase();
+  
+  for (var store of stores) {
       var postal = store["address"]["postalCode"].substring(0, 5);
-      if (postal == zipCode) {
-        foundStores.push(store);
+      var storeName = store["name"].toLowerCase();
+      var storeAddress = store["address"]["streetAddressLine1"].toLowerCase();
+
+      if (postal.includes(searchInput) || storeName.includes(searchInput) || storeAddress.includes(searchInput)) {
+          foundStores.push(store);
       }
-    }
-  } else {
-    foundStores = stores;
   }
+  
+  console.log("foundStores", foundStores);
   clearLocations();
   displayStores(foundStores);
   showStoresMarkers(foundStores);
