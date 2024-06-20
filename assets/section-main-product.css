@@ -966,6 +966,9 @@ a.product__text {
   }
 }
 
+.mw-120 {
+  max-width: 120rem;
+}
 @media screen and (min-width: 750px) {
   .product--thumbnail_slider .thumbnail-slider {
     display: flex;

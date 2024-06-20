@@ -68,13 +68,18 @@
     top: 320px;
     border-radius: 30px;
     bottom: 20px;
-
     display: flex;
-
     overflow-y: hidden;
-
     padding-bottom: 30px;
+}
 
+@media only screen and (max-width: 767px) {
+    .stores-list-container {
+        left: 0;
+    }
+    .search-container {
+        left: 0;
+    }
 }
 
 .store-container {

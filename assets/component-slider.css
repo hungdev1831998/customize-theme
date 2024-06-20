@@ -156,7 +156,7 @@ slider-component.slider-component-full-width {
     margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
   }
 
-  .slider.slider--desktop .slider__slide {
+  /* .slider.slider--desktop .slider__slide {
     margin-bottom: 0;
     padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
     padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom));
@@ -165,6 +165,11 @@ slider-component.slider-component-full-width {
   .slider--desktop .slider__slide:first-child {
     margin-left: var(--desktop-margin-left-first-item);
     scroll-margin-left: var(--desktop-margin-left-first-item);
+  } */
+
+  .slider--desktop .slider__slide:last-child {
+    margin-right: var(--desktop-margin-left-first-item);
+    scroll-margin-right: var(--desktop-margin-left-first-item);
   }
 
   .slider-component-full-width .slider--desktop {

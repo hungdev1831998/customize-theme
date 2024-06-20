@@ -490,3 +490,8 @@
     color: currentColor;
   }
 }
+
+.img-banner {
+  width: 100%;
+  height: 100%;
+}

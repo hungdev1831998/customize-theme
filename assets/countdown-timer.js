@@ -1,9 +1,9 @@
-const countdown = new Date(Date.parse(new Date()) + 14 * 24 * 60 * 60 * 1000);
+var countdown = new Date(Date.parse(new Date()) + 14 * 24 * 60 * 60 * 1000);
 
-const days = document.querySelector(".days").querySelector(".flip-card");
-const hours = document.querySelector(".hours").querySelector(".flip-card");
-const minutes = document.querySelector(".minutes").querySelector(".flip-card");
-const seconds = document.querySelector(".seconds").querySelector(".flip-card");
+var days = document.querySelector(".days").querySelector(".flip-card");
+var hours = document.querySelector(".hours").querySelector(".flip-card");
+var minutes = document.querySelector(".minutes").querySelector(".flip-card");
+var seconds = document.querySelector(".seconds").querySelector(".flip-card");
 
 // ** get the time totals, return them
 function getTimeRemaining(countdown) {
@@ -41,7 +41,7 @@ function initializeClock(countdown) {
   const timeinterval = setInterval(updateClock, 1000);
 }
 
-const addFlip = (card, time) => {
+function addFlip (card, time) {
   // ** confirm time has changed
   const currTime = card.querySelector(".top-half").innerText;
   if (time == currTime) return;

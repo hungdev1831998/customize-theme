@@ -75,6 +75,19 @@
   margin-bottom: 1rem;
 }
 
+.section_product_slider {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+
+@media only screen and (max-width: 479px) {
+  .section_product_slider {
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 990px) {
   .collection__title--desktop-slider .title {
     margin-bottom: 2.5rem;

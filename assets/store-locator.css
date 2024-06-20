@@ -78,6 +78,30 @@
     padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+    .stores-list-container {
+        left: 50px;
+    }
+    .search-container {
+        left: 50px;
+    }
+    .store-address {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .stores-list-container {
+        left: 0;
+    }
+    .search-container {
+        left: 0;
+    }
+    .store-address {
+        margin-top: 0;
+    }
+}
+
 .store-container {
     border-bottom: 1px solid #979797;
     display: flex;
