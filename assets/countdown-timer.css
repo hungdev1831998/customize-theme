@@ -27,7 +27,7 @@
     overflow: hidden;
     background: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/bg-stars.svg), linear-gradient(0deg, rgba(37, 29, 44, 1) 33%, rgba(30, 30, 40, 1) 50%);
 }
-h1 {
+#cdt .title {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
