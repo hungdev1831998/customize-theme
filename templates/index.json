@@ -1,5 +1,62 @@
 {
   "sections": {
+    "slideshow_nBen9f": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_cAGNk8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a1_04722657-62da-48a5-a68a-82d8d2be04f5.jpg",
+            "heading": "<strong>Beats Solo2<\/strong>",
+            "heading_size": "h2",
+            "subheading": "Delivers clear, dynamic sound with the freedom of movement.",
+            "button_label": "Read more",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "background_transparent": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_CKYYrw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a2.jpg",
+            "heading": "<strong>NOONTEC ZORO II HD FASHION HI-FI HEADPHONE<\/strong>",
+            "heading_size": "h2",
+            "subheading": "The first generation of the ZORO headphone was created in 2011",
+            "button_label": "Read more",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": true,
+            "background_transparent": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cAGNk8",
+        "slide_CKYYrw"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -34,6 +91,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/a1_04722657-62da-48a5-a68a-82d8d2be04f5.jpg",
         "image_overlay_opacity": 10,
@@ -140,66 +198,6 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "countdown_timer": {
-      "type": "countdown-timer",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Countdown Timer",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your store location with customers. Describe the store location, show popup information of the store, help customers easily find stores based on postal code.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
-      }
-    },
-    "store_locator": {
-      "type": "store-locator",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Store Locator",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your store location with customers. Describe the store location, show popup information of the store, help customers easily find stores based on postal code.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
       }
     },
     "our_service": {
@@ -334,7 +332,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand CUSTOMIZE",
+            "heading": "Talk about your brand CUSTOMIZE homepage",
             "heading_size": "h1"
           }
         },
@@ -356,20 +354,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "multicolumn": {
@@ -427,17 +411,15 @@
     }
   },
   "order": [
+    "slideshow_nBen9f",
     "image_banner",
     "image_with_text_FNcA9n",
     "image_with_text_mFT8Tk",
-    "countdown_timer",
-    "store_locator",
     "our_service",
     "featured_product",
     "featured_collection",
     "collage",
     "rich_text",
-    "video",
     "multicolumn"
   ]
 }
