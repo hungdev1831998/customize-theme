@@ -93,11 +93,11 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-          {%- if show_dynamic_checkout -%}
+          {% comment %} {%- if show_dynamic_checkout -%}
             <input type="text" name="properties[Monogram]">
             <input type="submit" value="Add to cart 2">
             {{ form | payment_button }}
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
         </div>
       {%- endform -%}
     </product-form>

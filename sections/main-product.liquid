@@ -3,6 +3,7 @@
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
   data-section="{{ section.id }}"
 >
+  <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -68,10 +69,10 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-      <div class="grid__item product__media-wrapper">
+      <div class="grid__item product__media-wrapper product__media-wrapper-cus">
         {% render 'product-media-gallery', variant_images: variant_images %}
       </div>
-      <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <div class="product__info-wrapper product__info-wrapper-cus grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <product-info
           id="ProductInfo-{{ section.id }}"
           data-section="{{ section.id }}"
@@ -642,6 +643,56 @@
             {% render 'icon-arrow' %}
           </a>
         </product-info>
+      </div>
+
+      <div class="product__additional-wrapper-cus">
+        <div class="product-info-right three-eighths">          
+            <div class="product-extrainfo">
+              <ul>
+                <li>
+                  <span class="fa-stack fa-lg"
+                    ><i class="fa fa-circle fa-stack-2x"></i
+                    ><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span
+                  ><span class="detail_more_info"
+                    >Guarantee<span class="sub">Quality checked</span></span
+                  >
+                </li>
+                <li>
+                  <span class="fa-stack fa-lg"
+                    ><i class="fa fa-circle fa-stack-2x"></i
+                    ><i class="fa fa-truck fa-stack-1x fa-inverse"></i></span
+                  ><span class="detail_more_info"
+                    >Free Shipping<span class="sub">Free on all products</span></span
+                  >
+                </li>
+                <li>
+                  <span class="fa-stack fa-lg"
+                    ><i class="fa fa-circle fa-stack-2x"></i
+                    ><i class="fa fa-gift fa-stack-1x fa-inverse"></i></span
+                  ><span class="detail_more_info"
+                    >Special gift cards<span class="sub">Special gift cards</span></span
+                  >
+                </li>
+                <li>
+                  <span class="fa-stack fa-lg"
+                    ><i class="fa fa-circle fa-stack-2x"></i
+                    ><i class="fa fa-reply fa-stack-1x fa-inverse"></i></span
+                  ><span class="detail_more_info"
+                    >Free return<span class="sub"> Within 7 days</span></span
+                  >
+                </li>
+                <li>
+                  <span class="fa-stack fa-lg"
+                    ><i class="fa fa-circle fa-stack-2x"></i
+                    ><i class="fa fa-tty fa-stack-1x fa-inverse"></i></span
+                  ><span class="detail_more_info"
+                    >Consultancy<span class="sub">Lifetime 24/7/356</span></span
+                  >
+                </li>
+              </ul>
+              
+            </div>          
+          </div>
       </div>
     </div>
 
