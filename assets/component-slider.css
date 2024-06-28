@@ -380,3 +380,23 @@ slider-component.slider-component-full-width {
 .slider-button--prev:not([disabled]):hover .icon {
   transform: rotate(90deg) scale(1.1);
 }
+@media screen and (min-width: 990px) {
+  .slider--desktop {
+    /* Điều chỉnh các thuộc tính phù hợp cho slider trên desktop */
+    scroll-padding-left: var(--desktop-margin-left-first-item); /* Điều chỉnh khoảng cách trái của slider */
+    margin-bottom: 2rem; /* Điều chỉnh khoảng cách dưới cùng của slider */
+  }
+
+  .slider--desktop .slider__slide {
+    /* Các điều chỉnh khác cho các phần tử slide trong slider desktop */
+    padding-top: 1rem; /* Điều chỉnh khoảng cách trên cùng của mỗi slide */
+    padding-bottom: 1rem; /* Điều chỉnh khoảng cách dưới cùng của mỗi slide */
+  }
+
+  .slider-button {
+    /* Điều chỉnh kích thước của các nút điều hướng trên desktop */
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+}

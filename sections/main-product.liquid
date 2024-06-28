@@ -19,6 +19,45 @@
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
 
+  <style>
+    .product-tabs {
+      margin-top: 20px;
+    }
+    .tabs {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      border-bottom: 2px solid #ccc;
+    }
+    .product-tabs__info .tabs {
+      border-bottom: none;
+    }
+    .tab-link {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background: #f1f1f1;
+      text-transform: uppercase;
+      margin-right: 3px;
+    }
+    .tab-link.current {
+      background-color: #fff;
+      font-weight: bold;
+    }
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      {% comment %} border-top: none; {% endcomment %}
+    }
+    .tab-content.current {
+      display: block;
+    }
+
+    </style>
+
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -744,6 +783,48 @@
       endif
     -%}
 
+    <div class="product-tabs product-tabs__info">
+      <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1">Description</li>
+        <li class="tab-link" data-tab="tab-2">Warranty</li>
+        <li class="tab-link" data-tab="tab-3">Delivery</li>
+        <li class="tab-link" data-tab="tab-4">Payment</li>
+        <li class="tab-link" data-tab="tab-5">Customer Review</li>
+      </ul>
+      <div id="tab-1" class="tab-content current">
+        {{ product.description }}
+      </div>
+      <div id="tab-2" class="tab-content">
+        {{ product.warranty }}
+      </div>
+      <div id="tab-3" class="tab-content">
+        {{ product.delivery }}
+      </div>
+      <div id="tab-4" class="tab-content">
+        {{ product.payment }}
+      </div>
+      <div id="tab-5" class="tab-content">
+        {{ product.customer_review }}
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const tabs = document.querySelectorAll('.tab-link');
+        const contents = document.querySelectorAll('.tab-content');
+      
+        tabs.forEach(tab => {
+          tab.addEventListener('click', function() {
+            tabs.forEach(item => item.classList.remove('current'));
+            contents.forEach(content => content.classList.remove('current'));
+      
+            tab.classList.add('current');
+            document.getElementById(tab.getAttribute('data-tab')).classList.add('current');
+          });
+        });
+      });
+      </script>
+      
     <script type="application/ld+json">
       {
         "@context": "http://schema.org/",
