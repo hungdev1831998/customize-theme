@@ -58,44 +58,6 @@
   endif
 -%}
 
-<style>
-  .product-also-buy-slider-button--prev {
-    position: absolute;
-    top: 40%;
-    z-index: 200;
-    left: 30px;
-    background: #fff !important;
-    color: #b0b0b0 !important;
-    border-radius: 5px;
-    {% comment %} opacity: 0; {% endcomment %}
-  }
-  
-  .product-also-buy-slider-button--next {
-    position: absolute;
-    top: 40%;
-    z-index: 200;
-    right: 20px;
-    background: #fff !important;
-    color: #b0b0b0 !important;
-    border-radius: 5px;
-    {% comment %} opacity: 0; {% endcomment %}
-  }
-  
-  .product-also-buy-slider-button--next:hover, .product-also-buy-slider-button--prev:hover {
-    background: #ffffff !important;
-    color: #b0b0b0 !important;
-  }
-  
-  {% comment %} #b0b0b0 {% endcomment %}
-
-  {% comment %} slideshow-component:hover .product-also-buy-slider-button--next {
-    opacity: 1;
-  }
-  
-  slideshow-component:hover .product-also-buy-slider-button--prev {
-    opacity: 1;
-  } {% endcomment %}
-</style>
 <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
@@ -182,25 +144,6 @@
         {%- endfor -%}
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
-        <button
-          type="button"
-          class="slider-button slider-button--prev product-also-buy-slider-button--prev"
-          name="previous"
-          aria-label="{{ 'general.slider.previous_slide' | t }}"
-          aria-controls="Slider-{{ section.id }}"
-        >
-          {% render 'icon-caret-big' %}
-        </button>
-        <button
-          type="button"
-          class="slider-button slider-button--next product-also-buy-slider-button--next"
-          name="next"
-          aria-label="{{ 'general.slider.next_slide' | t }}"
-          aria-controls="Slider-{{ section.id }}"
-        >
-          {% render 'icon-caret-big' %}
-        </button>
-
         <div class="slider-buttons">
           <button
             type="button"

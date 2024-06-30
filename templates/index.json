@@ -261,6 +261,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [],
+      "disabled": true,
       "settings": {
         "title": "Blog posts",
         "heading_size": "h2",

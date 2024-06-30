@@ -12,10 +12,12 @@
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {}
         },
         "caption": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
@@ -97,8 +99,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
         "description",
+        "buy_buttons",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",

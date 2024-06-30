@@ -25,6 +25,93 @@
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
+
+
+<style>
+  .cart-items {
+    border: 1px solid #ebebeb;
+    padding: 20px;
+  }
+  @media screen and (min-width: 591px) {
+      .section-header-wrapper {
+          padding: 0 20px;
+      }
+  }
+  .section-header-wrapper {
+      max-width: 1220px;
+      margin: 0 auto;
+      {% comment %} padding: 0 10px; {% endcomment %}
+      padding: 0 6rem;
+  }
+  header.section-header.wrapper-breadcrumb {
+    border: none;
+    background: #f7f7f7;
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  header.section-header.wrapper-breadcrumb h3 {
+    font: 600 18px/1.15 Poppins;
+    background: none;
+    padding: 0;
+    text-transform: uppercase;
+    color: #151515;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .section-header-wrapper  a {
+    text-decoration: none;
+    color: #1c1d1d;
+  }
+
+  @media screen and (min-width: 769px) {
+      .section-header {
+          display: table;
+          table-layout: fixed;
+          width: 100%;
+      }
+  }
+
+  .font-large {
+    font: 600 18px/1.15 Poppins !important;
+    color: #151515 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    -webkit-text-size-adjust: 100% !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  .price--end, .totals__total-value {
+    font: 600 18px/1.15 Poppins !important;
+    color: #151515 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    -webkit-text-size-adjust: 100% !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  
+</style>
+
+<header class="section-header wrapper-breadcrumb">
+  <div class="section-header-wrapper">
+    <h3>Your cart</h3>
+    {% comment %} <h3>USB SanDisk</h3>     {% endcomment %}
+    <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+      <a href="/" title="Back to the frontpage" previewlistener="true">Home</a>
+        {% comment %} <span aria-hidden="true">›</span> {% endcomment %}
+        {% comment %} <a href="/collections/collection-full-width" title="" previewlistener="true">Collection - Full Width</a> {% endcomment %}
+        <span aria-hidden="true">›</span>
+        <span>Your cart</span>
+    </nav>
+    </div>
+</header>
+
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link">
@@ -58,20 +145,20 @@
               </caption>
               <thead>
                 <tr>
-                  <th class="caption-with-letter-spacing" colspan="2" scope="col">
+                  <th class="caption-with-letter-spacing font-large" colspan="2" scope="col">
                     {{ 'sections.cart.headings.product' | t }}
                   </th>
-                  <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">
+                  <th class="medium-hide large-up-hide right caption-with-letter-spacing font-large" colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
                   <th
-                    class="cart-items__heading--wide cart-items__heading--quantity small-hide caption-with-letter-spacing"
+                    class="cart-items__heading--wide cart-items__heading--quantity small-hide caption-with-letter-spacing font-large"
                     colspan="1"
                     scope="col"
                   >
                     {{ 'sections.cart.headings.quantity' | t }}
                   </th>
-                  <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">
+                  <th class="small-hide right caption-with-letter-spacing font-large" colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
                 </tr>

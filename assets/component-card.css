@@ -3,6 +3,8 @@
   height: 100%;
   position: relative;
   text-decoration: none;
+  border: 1px solid #ebebeb;
+  padding: 0 5px
 }
 
 .card {
