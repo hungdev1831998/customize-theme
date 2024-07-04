@@ -31,7 +31,6 @@ function initMap() {
     searchStores();
 }
 
-
 function searchStores(){
     var foundStores = [];
     var zipCode = document.getElementById('zip-code-input').value;

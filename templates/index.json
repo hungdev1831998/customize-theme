@@ -260,8 +260,8 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "custom_css": [],
       "disabled": true,
+      "custom_css": [],
       "settings": {
         "title": "Blog posts",
         "heading_size": "h2",
