@@ -112,14 +112,14 @@
         "heading_pYbJPX": {
           "type": "heading",
           "settings": {
-            "heading": "Samsung Gear S Smartwatch",
+            "heading": "PRODUCT",
             "heading_size": "h1"
           }
         },
         "text_JTDj7Q": {
           "type": "text",
           "settings": {
-            "text": "<p>Maecenas tempor tempor dui a posuere. Phasellus hendrerit sodales lacus, ac viverra libero tempus sed. In vitae nulla sed ipsum dictum laoreet.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_style": "body"
           }
         },
@@ -127,7 +127,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read more",
-            "button_link": "https:\/\/digital-world-8.myshopify.com\/products\/apple-macbook-air",
+            "button_link": "",
             "button_style_secondary": false
           }
         }
@@ -138,7 +138,6 @@
         "button_QhncET"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -159,14 +158,14 @@
         "heading_p7yDkA": {
           "type": "heading",
           "settings": {
-            "heading": "IPAD AIR 2",
+            "heading": "PRODUCT",
             "heading_size": "h1"
           }
         },
         "text_bVAVAR": {
           "type": "text",
           "settings": {
-            "text": "<p>Maecenas tempor tempor dui a posuere. Phasellus hendrerit sodales lacus, ac viverra libero tempus sed. In vitae nulla sed ipsum dictum laoreet.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_style": "body"
           }
         },
@@ -185,7 +184,6 @@
         "button_yVYV4g"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",

@@ -69,8 +69,8 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_bk_VtErUr": {
-      "type": "featured-collection_bk",
+    "featured_collection_VtErUr": {
+      "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -102,6 +102,6 @@
     "banner",
     "product-grid",
     "collection_list_WFLwMb",
-    "featured_collection_bk_VtErUr"
+    "featured_collection_VtErUr"
   ]
 }
