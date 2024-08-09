@@ -144,22 +144,27 @@
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
             {%- if placeholder_slide == 1 -%}
-              {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              <img srcset='https://woodstock-theme-light.myshopify.com/cdn/shop/files/home-slider-img-03.jpg?v=1691136115'/>
+              {% comment %} <img srcset='https://launch-theme-fresh.myshopify.com/cdn/shop/files/slide-1-image_1200x700.jpg?v=1613159977'/> {% endcomment %}
+              {% comment %} {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }} {% endcomment %}
             {%- else -%}
-              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% comment %} <img srcset='https://launch-theme-fresh.myshopify.com/cdn/shop/files/slide-2-image_1200x700.jpg?v=1613159978'/> {% endcomment %}
+            <img srcset='https://woodstock-theme-light.myshopify.com/cdn/shop/files/home-slider-img-02.jpg?v=1691136092'/>
+              {% comment %} {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }} {% endcomment %}
             {%- endif -%}
           {%- endif -%}
         </div>
+        <script>console.log({{block.settings|json}});</script>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == true or block.settings.background_transparent == true %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}" style="color: #FFFFFF;">
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
             {%- if block.settings.subheading != blank -%}
-              <div class="banner__text rte" {{ block.shopify_attributes }}>
-                <p>{{ block.settings.subheading }}</p>
+              <div class="banner__text rte 1" {{ block.shopify_attributes }}>
+                <p style="color: #FFFFFF;">{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}

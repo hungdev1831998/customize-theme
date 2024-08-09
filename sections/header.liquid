@@ -76,6 +76,111 @@
       padding-top: 0.5rem;
     }
   }
+
+  .container {
+    display: flex;
+    /* height: 50px;   */
+    width: 100%;
+  }
+  
+  /* .header {
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+  }   */
+  
+  .scroll-container {
+    /* height: 20px; */
+    height: 52px;
+  }
+  
+  .carousel-primary,
+  .carousel-secondary {
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    margin-top: 10px;
+
+  }
+  
+  .carousel-primary img {
+    height: 100px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 14px;
+  }
+
+  .carousel-primary .wrapper-carou {
+      /* margin-left: 20px;   */
+  }
+  
+  .carousel-primary {
+  /* display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal 30s linear infinite;   */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: scroll-horizontal 35s linear infinite;
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+
+  }
+  
+  .carousel-secondary {
+    animation: scroll-horizontal 35s linear infinite;
+    animation-delay: 10s;
+  }
+  
+  @keyframes scroll-horizontal {
+    0% {
+      left: 100%;
+    }
+  
+    100% {
+      left: -100%;
+    }
+  }
+  
+  .carousel-primary:hover,
+  .carousel-primary:hover~.carousel-secondary {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .carousel-secondary:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  
+  .scroll-container:hover>.carousel-primary:not(:hover) {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  .wrapper-carou {
+    {% comment %} background: #e3e3e3; {% endcomment %}
+    padding: 8px 16px;
+    border-radius: 8px;
+    height: 70%;
+    /* margin-top: 10px; */
+  }
+
+  .tag {
+    margin: 0;
+    text-transform: uppercase;
+  }
 </style>
 
 {%- style -%}
@@ -160,7 +265,7 @@
 
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
+        <h1 class="header__heading 1">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
@@ -283,13 +388,16 @@
       {%- endfor -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {% comment %} render 'icon-cart-empty' {% endcomment %}
+        {% comment %} render 'icon-cart' {% endcomment %}
         {%- liquid
           if cart == empty
-            render 'icon-cart-empty'
+            render 'icon-cart-2-empty'
           else
-            render 'icon-cart'
+            render 'icon-cart-2-empty'
           endif
         -%}
+        <script>console.log({{cart|json}});</script>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
@@ -307,6 +415,98 @@
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
+<div class="container">
+  <div class="scroll-container">
+    <div class="carousel-primary">
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Guarantee</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Free Shipping</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Special gift cards</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Free return</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Consultancy</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Guarantee</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Free Shipping</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+    </div>
+    {% comment %} <div class="carousel-primary carousel-secondary"> 
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Guarantee</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Free Shipping</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Special gift cards</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Free return</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Consultancy</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Guarantee</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+      </svg>
+      <div class='wrapper-carou'>
+        <h4 class='tag'>Free Shipping 2</h4>
+      </div>
+      <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+    </svg> {% endcomment %}
+    </div>
+  </div>
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
