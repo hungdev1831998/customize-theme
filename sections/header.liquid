@@ -239,6 +239,11 @@
   endfor
 -%}
 
+
+{% if section.settings.image_zoom == 'hover' %}
+  <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   {%- liquid
     assign social_links = false
@@ -397,7 +402,7 @@
             render 'icon-cart-2-empty'
           endif
         -%}
-        <script>console.log({{cart|json}});</script>
+        <script>console.log({{cart|json}});</script>  
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
@@ -446,7 +451,6 @@
         <h4 class='tag'>Consultancy</h4>
       </div>
       <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
-
         <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
       </svg>
       <div class='wrapper-carou'>
@@ -459,7 +463,7 @@
         <h4 class='tag'>Free Shipping</h4>
       </div>
       <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
-      <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
+        <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
       </svg>
     </div>
     {% comment %} <div class="carousel-primary carousel-secondary"> 
@@ -505,8 +509,8 @@
       <svg class="separator" width="24" height="24" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
       <polygon stroke="red" fill="red" fill="none" points="50,0 21,90 98,35 2,35 79,90" />
     </svg> {% endcomment %}
-    </div>
   </div>
+</div>
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
