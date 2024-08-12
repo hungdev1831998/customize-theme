@@ -257,6 +257,18 @@
         "title": "Contactformulier"
       }
     },
+    "about": {
+      "form": {
+        "name": "Naam",
+        "email": "E‑mail",
+        "phone": "Telefoonnummer",
+        "comment": "Reactie",
+        "send": "Sturen",
+        "post_success": "Bedankt dat je about met ons hebt opgenomen. Je hoort zo snel mogelijk van ons.",
+        "error_heading": "Pas het volgende aan:",
+        "title": "Aboutformulier"
+      }
+    },
     "404": {
       "title": "Pagina niet gevonden",
       "subtext": "404"

@@ -257,6 +257,18 @@
         "title": "Formulir kontak"
       }
     },
+    "about": {
+      "form": {
+        "name": "Nama",
+        "email": "Email",
+        "phone": "Nomor telepon",
+        "comment": "Komentar",
+        "send": "Kirim",
+        "post_success": "Terima kasih sudah menghubungi kami. Kami akan segera menghubungi Anda.",
+        "error_heading": "Mohon sesuaikan:",
+        "title": "Formulir kontak"
+      }
+    },
     "404": {
       "title": "Halaman tidak ditemukan",
       "subtext": "404"

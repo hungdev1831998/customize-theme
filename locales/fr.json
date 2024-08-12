@@ -266,6 +266,18 @@
         "title": "Formulaire de contact"
       }
     },
+    "about": {
+      "form": {
+        "name": "Nom",
+        "email": "E-mail",
+        "phone": "Numéro de téléphone",
+        "comment": "Commentaire",
+        "send": "Envoyer",
+        "post_success": "Merci de nous avoir aboutés. Nous vous répondrons dès que possible.",
+        "error_heading": "Veuillez ajuster les éléments suivants :",
+        "title": "Formulaire de about"
+      }
+    },
     "404": {
       "title": "Page non trouvée",
       "subtext": "404"

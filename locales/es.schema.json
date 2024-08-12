@@ -656,6 +656,12 @@
         "name": "Formulario de contacto"
       }
     },
+    "about-form": {
+      "name": "Formulario de abouto",
+      "presets": {
+        "name": "Formulario de abouto"
+      }
+    },
     "custom-liquid": {
       "name": "Liquid personalizado",
       "settings": {
@@ -2299,6 +2305,114 @@
       }
     },
     "rich-text": {
+      "name": "Texto enriquecido",
+      "settings": {
+        "full_width": {
+          "label": "Definir ancho completo en sección"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centrado"
+          },
+          "options__3": {
+            "label": "Derecha"
+          },
+          "label": "Posición del contenido en el escritorio",
+          "info": "La posición se optimizó automáticamente para dispositivos móviles."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centrado"
+          },
+          "options__3": {
+            "label": "Derecha"
+          },
+          "label": "Alineación de contenido"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Título",
+          "settings": {
+            "heading": {
+              "label": "Título"
+            }
+          }
+        },
+        "text": {
+          "name": "Texto",
+          "settings": {
+            "text": {
+              "label": "Descripción"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Botones",
+          "settings": {
+            "button_label_1": {
+              "label": "Primera etiqueta de botón",
+              "info": "Deja la etiqueta en blanco para ocultar el botón."
+            },
+            "button_link_1": {
+              "label": "Primer enlace de botón"
+            },
+            "button_style_secondary_1": {
+              "label": "Usar estilo de botón con contorno"
+            },
+            "button_label_2": {
+              "label": "Segunda etiqueta de botón",
+              "info": "Deja la etiqueta en blanco para ocultar el botón."
+            },
+            "button_link_2": {
+              "label": "Segundo enlace de botón"
+            },
+            "button_style_secondary_2": {
+              "label": "Usar estilo de botón con contorno"
+            }
+          }
+        },
+        "caption": {
+          "name": "Leyenda",
+          "settings": {
+            "text": {
+              "label": "Texto"
+            },
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Subtítulo"
+              },
+              "options__2": {
+                "label": "Mayúscula"
+              }
+            },
+            "caption_size": {
+              "label": "Tamaño del texto",
+              "options__1": {
+                "label": "Pequeño"
+              },
+              "options__2": {
+                "label": "Mediano"
+              },
+              "options__3": {
+                "label": "Grande"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Texto enriquecido"
+      }
+    },
+    "our-service": {
       "name": "Texto enriquecido",
       "settings": {
         "full_width": {

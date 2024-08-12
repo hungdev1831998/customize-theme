@@ -656,6 +656,12 @@
         "name": "Kontaktformulär"
       }
     },
+    "about-form": {
+      "name": "Kontaktformulär",
+      "presets": {
+        "name": "Kontaktformulär"
+      }
+    },
     "custom-liquid": {
       "name": "Anpassa Liquid",
       "settings": {
@@ -2298,222 +2304,6 @@
         "name": "Sida"
       }
     },
-    "store-locator": {
-      "name": "Rich text",
-      "settings": {
-        "full_width": {
-          "label": "Ge avsnittet full bredd"
-        },
-        "desktop_content_position": {
-          "options__1": {
-            "label": "Vänster"
-          },
-          "options__2": {
-            "label": "Centrera"
-          },
-          "options__3": {
-            "label": "Höger"
-          },
-          "label": "Innehållsposition på skrivbord",
-          "info": "Positionen optimeras automatiskt för mobilen."
-        },
-        "content_alignment": {
-          "options__1": {
-            "label": "Vänster"
-          },
-          "options__2": {
-            "label": "Centrera"
-          },
-          "options__3": {
-            "label": "Höger"
-          },
-          "label": "Innehållsjustering"
-        }
-      },
-      "blocks": {
-        "heading": {
-          "settings": {
-            "heading": {
-              "label": "Rubrik"
-            }
-          },
-          "name": "Rubrik"
-        },
-        "text": {
-          "settings": {
-            "text": {
-              "label": "Beskrivning"
-            }
-          },
-          "name": "Text"
-        },
-        "buttons": {
-          "settings": {
-            "button_label_1": {
-              "label": "Första knappetikett",
-              "info": "Lämna etiketten tom eller dölj knappen."
-            },
-            "button_link_1": {
-              "label": "Första knapplänk"
-            },
-            "button_style_secondary_1": {
-              "label": "Använd stil för knappkontur"
-            },
-            "button_label_2": {
-              "label": "Andra knappetikett",
-              "info": "Lämna etiketten tom eller dölj knappen."
-            },
-            "button_link_2": {
-              "label": "Andra knapplänk"
-            },
-            "button_style_secondary_2": {
-              "label": "Använd stil för knappkontur"
-            }
-          },
-          "name": "Knappar"
-        },
-        "caption": {
-          "name": "Rubrik",
-          "settings": {
-            "text": {
-              "label": "Text"
-            },
-            "text_style": {
-              "label": "Textstil",
-              "options__1": {
-                "label": "Underrubrik"
-              },
-              "options__2": {
-                "label": "Stora bokstäver"
-              }
-            },
-            "caption_size": {
-              "label": "Textstorlek",
-              "options__1": {
-                "label": "Liten"
-              },
-              "options__2": {
-                "label": "Medel"
-              },
-              "options__3": {
-                "label": "Stor"
-              }
-            }
-          }
-        }
-      },
-      "presets": {
-        "name": "Rich text"
-      }
-    },
-    "countdown-timer": {
-      "name": "Rich text",
-      "settings": {
-        "full_width": {
-          "label": "Ge avsnittet full bredd"
-        },
-        "desktop_content_position": {
-          "options__1": {
-            "label": "Vänster"
-          },
-          "options__2": {
-            "label": "Centrera"
-          },
-          "options__3": {
-            "label": "Höger"
-          },
-          "label": "Innehållsposition på skrivbord",
-          "info": "Positionen optimeras automatiskt för mobilen."
-        },
-        "content_alignment": {
-          "options__1": {
-            "label": "Vänster"
-          },
-          "options__2": {
-            "label": "Centrera"
-          },
-          "options__3": {
-            "label": "Höger"
-          },
-          "label": "Innehållsjustering"
-        }
-      },
-      "blocks": {
-        "heading": {
-          "settings": {
-            "heading": {
-              "label": "Rubrik"
-            }
-          },
-          "name": "Rubrik"
-        },
-        "text": {
-          "settings": {
-            "text": {
-              "label": "Beskrivning"
-            }
-          },
-          "name": "Text"
-        },
-        "buttons": {
-          "settings": {
-            "button_label_1": {
-              "label": "Första knappetikett",
-              "info": "Lämna etiketten tom eller dölj knappen."
-            },
-            "button_link_1": {
-              "label": "Första knapplänk"
-            },
-            "button_style_secondary_1": {
-              "label": "Använd stil för knappkontur"
-            },
-            "button_label_2": {
-              "label": "Andra knappetikett",
-              "info": "Lämna etiketten tom eller dölj knappen."
-            },
-            "button_link_2": {
-              "label": "Andra knapplänk"
-            },
-            "button_style_secondary_2": {
-              "label": "Använd stil för knappkontur"
-            }
-          },
-          "name": "Knappar"
-        },
-        "caption": {
-          "name": "Rubrik",
-          "settings": {
-            "text": {
-              "label": "Text"
-            },
-            "text_style": {
-              "label": "Textstil",
-              "options__1": {
-                "label": "Underrubrik"
-              },
-              "options__2": {
-                "label": "Stora bokstäver"
-              }
-            },
-            "caption_size": {
-              "label": "Textstorlek",
-              "options__1": {
-                "label": "Liten"
-              },
-              "options__2": {
-                "label": "Medel"
-              },
-              "options__3": {
-                "label": "Stor"
-              }
-            }
-          }
-        }
-      },
-      "presets": {
-        "name": "Rich text"
-      }
-    },
     "rich-text": {
       "name": "Rich text",
       "settings": {
@@ -2620,6 +2410,330 @@
       },
       "presets": {
         "name": "Rich text"
+      }
+    },
+    "our-service": {
+      "name": "Our service",
+      "settings": {
+        "full_width": {
+          "label": "Ge avsnittet full bredd"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Vänster"
+          },
+          "options__2": {
+            "label": "Centrera"
+          },
+          "options__3": {
+            "label": "Höger"
+          },
+          "label": "Innehållsposition på skrivbord",
+          "info": "Positionen optimeras automatiskt för mobilen."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Vänster"
+          },
+          "options__2": {
+            "label": "Centrera"
+          },
+          "options__3": {
+            "label": "Höger"
+          },
+          "label": "Innehållsjustering"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": {
+              "label": "Rubrik"
+            }
+          },
+          "name": "Rubrik"
+        },
+        "text": {
+          "settings": {
+            "text": {
+              "label": "Beskrivning"
+            }
+          },
+          "name": "Text"
+        },
+        "buttons": {
+          "settings": {
+            "button_label_1": {
+              "label": "Första knappetikett",
+              "info": "Lämna etiketten tom eller dölj knappen."
+            },
+            "button_link_1": {
+              "label": "Första knapplänk"
+            },
+            "button_style_secondary_1": {
+              "label": "Använd stil för knappkontur"
+            },
+            "button_label_2": {
+              "label": "Andra knappetikett",
+              "info": "Lämna etiketten tom eller dölj knappen."
+            },
+            "button_link_2": {
+              "label": "Andra knapplänk"
+            },
+            "button_style_secondary_2": {
+              "label": "Använd stil för knappkontur"
+            }
+          },
+          "name": "Knappar"
+        },
+        "caption": {
+          "name": "Rubrik",
+          "settings": {
+            "text": {
+              "label": "Text"
+            },
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Underrubrik"
+              },
+              "options__2": {
+                "label": "Stora bokstäver"
+              }
+            },
+            "caption_size": {
+              "label": "Textstorlek",
+              "options__1": {
+                "label": "Liten"
+              },
+              "options__2": {
+                "label": "Medel"
+              },
+              "options__3": {
+                "label": "Stor"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Our service"
+      }
+    },
+    "store-locator": {
+      "name": "Store locator",
+      "settings": {
+        "full_width": {
+          "label": "Ge avsnittet full bredd"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Vänster"
+          },
+          "options__2": {
+            "label": "Centrera"
+          },
+          "options__3": {
+            "label": "Höger"
+          },
+          "label": "Innehållsposition på skrivbord",
+          "info": "Positionen optimeras automatiskt för mobilen."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Vänster"
+          },
+          "options__2": {
+            "label": "Centrera"
+          },
+          "options__3": {
+            "label": "Höger"
+          },
+          "label": "Innehållsjustering"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": {
+              "label": "Rubrik"
+            }
+          },
+          "name": "Rubrik"
+        },
+        "text": {
+          "settings": {
+            "text": {
+              "label": "Beskrivning"
+            }
+          },
+          "name": "Text"
+        },
+        "buttons": {
+          "settings": {
+            "button_label_1": {
+              "label": "Första knappetikett",
+              "info": "Lämna etiketten tom eller dölj knappen."
+            },
+            "button_link_1": {
+              "label": "Första knapplänk"
+            },
+            "button_style_secondary_1": {
+              "label": "Använd stil för knappkontur"
+            },
+            "button_label_2": {
+              "label": "Andra knappetikett",
+              "info": "Lämna etiketten tom eller dölj knappen."
+            },
+            "button_link_2": {
+              "label": "Andra knapplänk"
+            },
+            "button_style_secondary_2": {
+              "label": "Använd stil för knappkontur"
+            }
+          },
+          "name": "Knappar"
+        },
+        "caption": {
+          "name": "Rubrik",
+          "settings": {
+            "text": {
+              "label": "Text"
+            },
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Underrubrik"
+              },
+              "options__2": {
+                "label": "Stora bokstäver"
+              }
+            },
+            "caption_size": {
+              "label": "Textstorlek",
+              "options__1": {
+                "label": "Liten"
+              },
+              "options__2": {
+                "label": "Medel"
+              },
+              "options__3": {
+                "label": "Stor"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Store locator"
+      }
+    },
+    "countdown-timer": {
+      "name": "Countdown timer",
+      "settings": {
+        "full_width": {
+          "label": "Ge avsnittet full bredd"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Vänster"
+          },
+          "options__2": {
+            "label": "Centrera"
+          },
+          "options__3": {
+            "label": "Höger"
+          },
+          "label": "Innehållsposition på skrivbord",
+          "info": "Positionen optimeras automatiskt för mobilen."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Vänster"
+          },
+          "options__2": {
+            "label": "Centrera"
+          },
+          "options__3": {
+            "label": "Höger"
+          },
+          "label": "Innehållsjustering"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": {
+              "label": "Rubrik"
+            }
+          },
+          "name": "Rubrik"
+        },
+        "text": {
+          "settings": {
+            "text": {
+              "label": "Beskrivning"
+            }
+          },
+          "name": "Text"
+        },
+        "buttons": {
+          "settings": {
+            "button_label_1": {
+              "label": "Första knappetikett",
+              "info": "Lämna etiketten tom eller dölj knappen."
+            },
+            "button_link_1": {
+              "label": "Första knapplänk"
+            },
+            "button_style_secondary_1": {
+              "label": "Använd stil för knappkontur"
+            },
+            "button_label_2": {
+              "label": "Andra knappetikett",
+              "info": "Lämna etiketten tom eller dölj knappen."
+            },
+            "button_link_2": {
+              "label": "Andra knapplänk"
+            },
+            "button_style_secondary_2": {
+              "label": "Använd stil för knappkontur"
+            }
+          },
+          "name": "Knappar"
+        },
+        "caption": {
+          "name": "Rubrik",
+          "settings": {
+            "text": {
+              "label": "Text"
+            },
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Underrubrik"
+              },
+              "options__2": {
+                "label": "Stora bokstäver"
+              }
+            },
+            "caption_size": {
+              "label": "Textstorlek",
+              "options__1": {
+                "label": "Liten"
+              },
+              "options__2": {
+                "label": "Medel"
+              },
+              "options__3": {
+                "label": "Stor"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Countdown timer"
       }
     },
     "apps": {

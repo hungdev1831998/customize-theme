@@ -656,6 +656,12 @@
         "name": "Formularz kontaktowy"
       }
     },
+    "about-form": {
+      "name": "Formularz kontaktowy",
+      "presets": {
+        "name": "Formularz kontaktowy"
+      }
+    },
     "custom-liquid": {
       "name": "Niestandardowy Liquid",
       "settings": {
@@ -2406,8 +2412,8 @@
         "name": "Tekst sformatowany"
       }
     },
-    "store-locator": {
-      "name": "Tekst sformatowany",
+    "our-service": {
+      "name": "Our service",
       "settings": {
         "full_width": {
           "label": "Zrób sekcję na całą szerokość"
@@ -2511,11 +2517,119 @@
         }
       },
       "presets": {
-        "name": "Tekst sformatowany"
+        "name": "Our service"
+      }
+    },
+    "store-locator": {
+      "name": "Store locator",
+      "settings": {
+        "full_width": {
+          "label": "Zrób sekcję na całą szerokość"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Lewa strona"
+          },
+          "options__2": {
+            "label": "Środek"
+          },
+          "options__3": {
+            "label": "Prawa strona"
+          },
+          "label": "Pozycja treści na komputerze",
+          "info": "Pozycja jest automatycznie optymalizowana dla urządzeń mobilnych."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Lewa strona"
+          },
+          "options__2": {
+            "label": "Środek"
+          },
+          "options__3": {
+            "label": "Prawa strona"
+          },
+          "label": "Wyrównanie zawartości"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Nagłówek",
+          "settings": {
+            "heading": {
+              "label": "Nagłówek"
+            }
+          }
+        },
+        "text": {
+          "name": "Tekst",
+          "settings": {
+            "text": {
+              "label": "Opis"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Przyciski",
+          "settings": {
+            "button_label_1": {
+              "label": "Pierwszy przycisk z etykietą",
+              "info": "Pozostaw etykietę pustą, aby ukryć przycisk."
+            },
+            "button_link_1": {
+              "label": "Pierwszy link przycisku"
+            },
+            "button_style_secondary_1": {
+              "label": "Użyj stylu przycisku konspektu"
+            },
+            "button_label_2": {
+              "label": "Drugi przycisk z etykietą",
+              "info": "Pozostaw etykietę pustą, aby ukryć przycisk."
+            },
+            "button_link_2": {
+              "label": "Drugi link przycisku"
+            },
+            "button_style_secondary_2": {
+              "label": "Użyj stylu przycisku konspektu"
+            }
+          }
+        },
+        "caption": {
+          "name": "Napisy",
+          "settings": {
+            "text": {
+              "label": "Tekst"
+            },
+            "text_style": {
+              "label": "Styl tekstu",
+              "options__1": {
+                "label": "Podtytuł"
+              },
+              "options__2": {
+                "label": "Duże litery"
+              }
+            },
+            "caption_size": {
+              "label": "Rozmiar tekstu",
+              "options__1": {
+                "label": "Mały"
+              },
+              "options__2": {
+                "label": "Średni"
+              },
+              "options__3": {
+                "label": "Duży"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Store locator"
       }
     },
     "countdown-timer": {
-      "name": "Tekst sformatowany",
+      "name": "Countdown timer",
       "settings": {
         "full_width": {
           "label": "Zrób sekcję na całą szerokość"
@@ -2619,7 +2733,7 @@
         }
       },
       "presets": {
-        "name": "Tekst sformatowany"
+        "name": "Countdown timer"
       }
     },
     "apps": {

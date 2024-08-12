@@ -257,6 +257,18 @@
         "title": "联系表"
       }
     },
+    "about": {
+      "form": {
+        "name": "名称",
+        "email": "电子邮件",
+        "phone": "电话号码",
+        "comment": "评论",
+        "send": "发送",
+        "post_success": "感谢您联系我们。我们会尽快回复您。",
+        "error_heading": "请调整以下内容：",
+        "title": "联系表"
+      }
+    },
     "404": {
       "title": "找不到页面",
       "subtext": "404"

@@ -1,0 +1,40 @@
+.about img {
+    max-width: 100%;
+  }
+  
+  .about .form__message {
+    align-items: flex-start;
+  }
+  
+  .about .icon-success {
+    margin-top: 0.2rem;
+  }
+  
+  .about .field {
+    margin-bottom: 1.5rem;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .about .field {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .about__button {
+    margin-top: 3rem;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .about__button {
+      margin-top: 4rem;
+    }
+  }
+  
+  @media screen and (min-width: 750px) {
+    .about__fields {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+    }
+  }
+  

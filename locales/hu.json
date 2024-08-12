@@ -257,6 +257,18 @@
         "title": "Kapcsolattartói űrlap"
       }
     },
+    "about": {
+      "form": {
+        "name": "Név",
+        "email": "E-mail-cím",
+        "phone": "Telefonszám",
+        "comment": "Hozzászólás",
+        "send": "Küldés",
+        "post_success": "Köszönjük, hogy írtál nekünk. A lehető legrövidebb időn belül válaszolni fogunk.",
+        "error_heading": "Kérjük, helyesbítsd a következőket:",
+        "title": "Kapcsolattartói űrlap"
+      }
+    },
     "404": {
       "title": "Nem találjuk az oldalt",
       "subtext": "404-es hiba történt."

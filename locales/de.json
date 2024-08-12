@@ -257,6 +257,18 @@
         "title": "Kontaktformular"
       }
     },
+    "about": {
+      "form": {
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefonnummer",
+        "comment": "Kommentar",
+        "send": "Senden",
+        "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
+        "error_heading": "Bitte passe Folgendes an:",
+        "title": "Kontaktformular"
+      }
+    },
     "404": {
       "title": "Seite nicht gefunden",
       "subtext": "404"

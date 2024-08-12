@@ -257,6 +257,18 @@
         "title": "Kontaktformulär"
       }
     },
+    "about": {
+      "form": {
+        "name": "Namn",
+        "email": "E-postadress",
+        "phone": "Telefonnummer",
+        "comment": "Kommentar",
+        "send": "Skicka",
+        "post_success": "Tack för att du kontaktar oss. Vi återkommer till dig så snart som möjligt.",
+        "error_heading": "Justera följande:",
+        "title": "Kontaktformulär"
+      }
+    },
     "404": {
       "title": "Sidan hittades inte",
       "subtext": "404"

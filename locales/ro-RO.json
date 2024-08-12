@@ -266,6 +266,18 @@
         "title": "Formular de contact"
       }
     },
+    "about": {
+      "form": {
+        "name": "Nume",
+        "email": "E-mail",
+        "phone": "Număr de telefon",
+        "comment": "Comentariu",
+        "send": "Trimiteți",
+        "post_success": "Vă mulțumim că ne-ați aboutat. Vom lua legătura cu dvs. cât mai curând posibil.",
+        "error_heading": "Vă rugăm să ajustați următoarele:",
+        "title": "Formular de about"
+      }
+    },
     "404": {
       "title": "Pagina nu a fost găsită",
       "subtext": "404"

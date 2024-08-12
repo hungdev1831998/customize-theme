@@ -656,6 +656,12 @@
         "name": "Kontaktformular"
       }
     },
+    "about-form": {
+      "name": "Kontaktformular",
+      "presets": {
+        "name": "Kontaktformular"
+      }
+    },
     "custom-liquid": {
       "name": "Benutzerdefiniertes Liquid",
       "settings": {
@@ -2406,8 +2412,8 @@
         "name": "Rich Text"
       }
     },
-    "store-locator": {
-      "name": "Rich Text",
+    "our-service": {
+      "name": "Our service",
       "settings": {
         "full_width": {
           "label": "Abschnitt über die gesamte Breite"
@@ -2511,11 +2517,119 @@
         }
       },
       "presets": {
-        "name": "Rich Text"
+        "name": "Our service"
+      }
+    },
+    "store-locator": {
+      "name": "Store locator",
+      "settings": {
+        "full_width": {
+          "label": "Abschnitt über die gesamte Breite"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Zentriert"
+          },
+          "options__3": {
+            "label": "Rechts"
+          },
+          "label": "Desktop-Inhaltsposition",
+          "info": "Positionen werden automatisch für die mobile Nutzung optimiert."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Zentriert"
+          },
+          "options__3": {
+            "label": "Rechts"
+          },
+          "label": "Inhaltsausrichtung"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Titel",
+          "settings": {
+            "heading": {
+              "label": "Überschrift"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Beschreibung"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Schaltflächen",
+          "settings": {
+            "button_label_1": {
+              "label": "Erste Schaltflächenbeschriftung",
+              "info": "Lasse die Beschriftung leer, um die Schaltfläche auszublenden."
+            },
+            "button_link_1": {
+              "label": "Erster Schaltflächenlink"
+            },
+            "button_style_secondary_1": {
+              "label": "Umriss-Stil für Schaltfläche verwenden"
+            },
+            "button_label_2": {
+              "label": "Zweite Schaltflächenbeschriftung",
+              "info": "Lasse die Beschriftung leer, um die Schaltfläche auszublenden."
+            },
+            "button_link_2": {
+              "label": "Zweiter Schaltflächenlink"
+            },
+            "button_style_secondary_2": {
+              "label": "Umriss-Stil für Schaltfläche verwenden"
+            }
+          }
+        },
+        "caption": {
+          "name": "Bildtext",
+          "settings": {
+            "text": {
+              "label": "Text"
+            },
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Untertitel"
+              },
+              "options__2": {
+                "label": "Großbuchstaben"
+              }
+            },
+            "caption_size": {
+              "label": "Textgröße",
+              "options__1": {
+                "label": "Klein"
+              },
+              "options__2": {
+                "label": "Mittel"
+              },
+              "options__3": {
+                "label": "Groß"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Store locator"
       }
     },
     "countdown-timer": {
-      "name": "Rich Text",
+      "name": "Countdown timer",
       "settings": {
         "full_width": {
           "label": "Abschnitt über die gesamte Breite"
@@ -2619,7 +2733,7 @@
         }
       },
       "presets": {
-        "name": "Rich Text"
+        "name": "Countdown timer"
       }
     },
     "apps": {

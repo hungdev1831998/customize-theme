@@ -257,6 +257,18 @@
         "title": "Kontaktformular"
       }
     },
+    "about": {
+      "form": {
+        "name": "Navn",
+        "email": "Mailadresse",
+        "phone": "Telefonnummer",
+        "comment": "Kommentar",
+        "send": "Send",
+        "post_success": "Tak for din henvendelse. Vi kontakter dig hurtigst muligt.",
+        "error_heading": "Juster følgende:",
+        "title": "Kontaktformular"
+      }
+    },
     "404": {
       "title": "Siden blev ikke fundet",
       "subtext": "404"

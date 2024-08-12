@@ -275,6 +275,18 @@
         "title": "Kontaktný formulár"
       }
     },
+    "about": {
+      "form": {
+        "name": "Meno",
+        "email": "E-mail",
+        "phone": "Telefónne číslo",
+        "comment": "Komentár",
+        "send": "Odoslať",
+        "post_success": "Ďakujeme, že ste nás kontaktovali. Budeme sa vám venovať čo najskôr.",
+        "error_heading": "Upravte tieto údaje:",
+        "title": "Kontaktný formulár"
+      }
+    },
     "404": {
       "title": "Stránka sa nenašla",
       "subtext": "404"

@@ -275,6 +275,18 @@
         "title": "Formularz kontaktowy"
       }
     },
+    "about": {
+      "form": {
+        "name": "Nazwa",
+        "email": "E-mail",
+        "phone": "Numer telefonu",
+        "comment": "Komentarz",
+        "send": "Wyślij",
+        "post_success": "Dziękujemy za skontaktowanie się z nami. Skontaktujemy się z Tobą tak szybko, jak to możliwe.",
+        "error_heading": "Dostosuj następujące dane:",
+        "title": "Formularz kontaktowy"
+      }
+    },
     "404": {
       "title": "Nie znaleziono strony",
       "subtext": "404"

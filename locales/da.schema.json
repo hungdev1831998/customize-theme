@@ -656,6 +656,12 @@
         "name": "Kontaktformular"
       }
     },
+    "about-form": {
+      "name": "Kontaktformular",
+      "presets": {
+        "name": "Kontaktformular"
+      }
+    },
     "custom-liquid": {
       "name": "Tilpasset Liquid",
       "settings": {
@@ -2299,6 +2305,114 @@
       }
     },
     "rich-text": {
+      "name": "RTF",
+      "settings": {
+        "full_width": {
+          "label": "Gør afsnittet til fuld bredde"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Venstre"
+          },
+          "options__2": {
+            "label": "Centreret"
+          },
+          "options__3": {
+            "label": "Højre"
+          },
+          "label": "Placering af indhold på computer",
+          "info": "Placeringen optimeres automatisk til mobil."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Venstre"
+          },
+          "options__2": {
+            "label": "Centreret"
+          },
+          "options__3": {
+            "label": "Højre"
+          },
+          "label": "Indholdsjustering"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Overskrift",
+          "settings": {
+            "heading": {
+              "label": "Overskrift"
+            }
+          }
+        },
+        "text": {
+          "name": "Tekst",
+          "settings": {
+            "text": {
+              "label": "Beskrivelse"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Knapper",
+          "settings": {
+            "button_label_1": {
+              "label": "Første knaptekst",
+              "info": "Lad feltet være tomt for at skjule knappen."
+            },
+            "button_link_1": {
+              "label": "Første knaplink"
+            },
+            "button_style_secondary_1": {
+              "label": "Brug rammeknaptypografi"
+            },
+            "button_label_2": {
+              "label": "Anden knaptekst",
+              "info": "Lad feltet være tomt for at skjule knappen."
+            },
+            "button_link_2": {
+              "label": "Andet knaplink"
+            },
+            "button_style_secondary_2": {
+              "label": "Brug rammeknaptypografi"
+            }
+          }
+        },
+        "caption": {
+          "name": "Billedtekst",
+          "settings": {
+            "text": {
+              "label": "Tekst"
+            },
+            "text_style": {
+              "label": "Teksttypografi",
+              "options__1": {
+                "label": "Underoverskrift"
+              },
+              "options__2": {
+                "label": "Store bogstaver"
+              }
+            },
+            "caption_size": {
+              "label": "Tekststørrelse",
+              "options__1": {
+                "label": "Lille"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Stor"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "RTF"
+      }
+    },
+    "our-service": {
       "name": "RTF",
       "settings": {
         "full_width": {

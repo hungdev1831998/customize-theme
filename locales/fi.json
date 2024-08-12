@@ -257,6 +257,18 @@
         "title": "Yhteydenottolomake"
       }
     },
+    "about": {
+      "form": {
+        "name": "Nimi",
+        "email": "Sähköposti",
+        "phone": "Puhelinnumero",
+        "comment": "Kommentti",
+        "send": "Lähetä",
+        "post_success": "Kiitos, että otit yhteyttä. Palaamme asiaan mahdollisimman pian.",
+        "error_heading": "Mukauta seuraavat:",
+        "title": "Yhteydenottolomake"
+      }
+    },
     "404": {
       "title": "Sivua ei löytynyt",
       "subtext": "404"

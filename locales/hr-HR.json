@@ -266,6 +266,18 @@
         "title": "Obrazac za kontakt"
       }
     },
+    "about": {
+      "form": {
+        "name": "Ime",
+        "email": "Adresa e-pošte",
+        "phone": "Broj telefona",
+        "comment": "Komentar",
+        "send": "Pošalji",
+        "post_success": "Hvala vam na javljanju. Odgovorit ćemo vam u najkraćem mogućem roku.",
+        "error_heading": "Prilagodite sljedeće:",
+        "title": "Obrazac za kontakt"
+      }
+    },
     "404": {
       "title": "Stranica nije pronađena",
       "subtext": "404"

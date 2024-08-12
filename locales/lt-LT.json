@@ -275,6 +275,18 @@
         "title": "Kontaktinė forma"
       }
     },
+    "about": {
+      "form": {
+        "name": "Vardas",
+        "email": "El. pašto adresas",
+        "phone": "Telefono numeris",
+        "comment": "Komentuoti",
+        "send": "Siųsti",
+        "post_success": "Dėkojame, kad su mumis susisiekėte. Atsakysime kaip galėdami greičiau.",
+        "error_heading": "Pakoreguokite toliau pateiktą informaciją.",
+        "title": "Kontaktinė forma"
+      }
+    },
     "404": {
       "title": "Puslapis nerastas",
       "subtext": "404"
