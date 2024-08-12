@@ -6,7 +6,6 @@
         "slide_cAGNk8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/a1_04722657-62da-48a5-a68a-82d8d2be04f5.jpg",
             "heading": "<strong>Beats Solo2<\/strong>",
             "heading_size": "h2",
             "subheading": "Delivers clear, dynamic sound with the freedom of movement.",
@@ -25,7 +24,6 @@
         "slide_CKYYrw": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/a2.jpg",
             "heading": "<strong>NOONTEC ZORO II HD FASHION HI-FI HEADPHONE<\/strong>",
             "heading_size": "h2",
             "subheading": "The first generation of the ZORO headphone was created in 2011",
@@ -93,7 +91,6 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/a1_04722657-62da-48a5-a68a-82d8d2be04f5.jpg",
         "image_overlay_opacity": 10,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -112,14 +109,14 @@
         "heading_pYbJPX": {
           "type": "heading",
           "settings": {
-            "heading": "PRODUCT",
+            "heading": "Samsung Gear S Smartwatch",
             "heading_size": "h1"
           }
         },
         "text_JTDj7Q": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Maecenas tempor tempor dui a posuere. Phasellus hendrerit sodales lacus, ac viverra libero tempus sed. In vitae nulla sed ipsum dictum laoreet.<\/p>",
             "text_style": "body"
           }
         },
@@ -127,7 +124,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read more",
-            "button_link": "",
+            "button_link": "https:\/\/digital-world-ac.myshopify.com\/products\/samsung-gear-s-smartwatch",
             "button_style_secondary": false
           }
         }
@@ -138,6 +135,7 @@
         "button_QhncET"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/product-1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -158,14 +156,14 @@
         "heading_p7yDkA": {
           "type": "heading",
           "settings": {
-            "heading": "PRODUCT",
+            "heading": "Ipad Air 2",
             "heading_size": "h1"
           }
         },
         "text_bVAVAR": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Maecenas tempor tempor dui a posuere. Phasellus hendrerit sodales lacus, ac viverra libero tempus sed. In vitae nulla sed ipsum dictum laoreet.<\/p>",
             "text_style": "body"
           }
         },
@@ -173,7 +171,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read more",
-            "button_link": "https:\/\/digital-world-8.myshopify.com\/products\/etiam-dan-lorem-quis-ligula-elementum-5",
+            "button_link": "https:\/\/digital-world-ac.myshopify.com\/products\/apple-macbook-air",
             "button_style_secondary": false
           }
         }
@@ -184,6 +182,7 @@
         "button_yVYV4g"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/product-2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",

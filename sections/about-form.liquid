@@ -29,107 +29,23 @@
         assign about_form_class = 'isolate scroll-trigger animate--slide-in'
       endif
     -%}
-    {%- form 'about', id: 'AboutForm', class: about_form_class -%}
-      {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
-          {% render 'icon-success' %}
-          {{ 'templates.about.form.post_success' | t }}
-        </h2>
-      {%- elsif form.errors -%}
-        <div class="form__message">
-          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-            {% render 'icon-error' %}
-            {{ 'templates.about.form.error_heading' | t }}
-          </h2>
-        </div>
-        <ul class="form-status-list caption-large" role="list">
-          <li>
-            <a href="#AboutForm-email" class="link">
-              {{ form.errors.translated_fields.email | capitalize }}
-              {{ form.errors.messages.email }}
-            </a>
-          </li>
-        </ul>
-      {%- endif -%}
-      <div class="about__fields">
-        <div class="field">
-          <input
-            class="field__input"
-            autocomplete="name"
-            type="text"
-            id="AboutForm-name"
-            name="about[{{ 'templates.about.form.name' | t }}]"
-            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="{{ 'templates.about.form.name' | t }}"
-          >
-          <label class="field__label" for="AboutForm-name">{{ 'templates.about.form.name' | t }}</label>
-        </div>
-        <div class="field field--with-error">
-          <input
-            autocomplete="email"
-            type="email"
-            id="AboutForm-email"
-            class="field__input"
-            name="about[email]"
-            spellcheck="false"
-            autocapitalize="off"
-            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-            aria-required="true"
-            {% if form.errors contains 'email' %}
-              aria-invalid="true"
-              aria-describedby="AboutForm-email-error"
-            {% endif %}
-            placeholder="{{ 'templates.about.form.email' | t }}"
-          >
-          <label class="field__label" for="AboutForm-email">
-            {{- 'templates.about.form.email' | t }}
-            <span aria-hidden="true">*</span></label
-          >
-          {%- if form.errors contains 'email' -%}
-            <small class="about__field-error" id="AboutForm-email-error">
-              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-              <span class="form__message">
-                {%- render 'icon-error' -%}
-                {{- form.errors.translated_fields.email | capitalize }}
-                {{ form.errors.messages.email -}}
-              </span>
-            </small>
-          {%- endif -%}
-        </div>
-      </div>
-      <div class="field">
-        <input
-          type="tel"
-          id="AboutForm-phone"
-          class="field__input"
-          autocomplete="tel"
-          name="about[{{ 'templates.about.form.phone' | t }}]"
-          pattern="[0-9\-]*"
-          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-          placeholder="{{ 'templates.about.form.phone' | t }}"
-        >
-        <label class="field__label" for="AboutForm-phone">{{ 'templates.about.form.phone' | t }}</label>
-      </div>
-      <div class="field">
-        <textarea
-          rows="10"
-          id="AboutForm-body"
-          class="text-area field__input"
-          name="about[{{ 'templates.about.form.comment' | t }}]"
-          placeholder="{{ 'templates.about.form.comment' | t }}"
-        >
-          {{- form.body -}}
-        </textarea>
-        <label class="form__label field__label" for="AboutForm-body">
-          {{- 'templates.about.form.comment' | t -}}
-        </label>
-      </div>
-      <div class="about__button">
-        <button type="submit" class="button">
-          {{ 'templates.about.form.send' | t }}
-        </button>
-      </div>
-    {%- endform -%}
+
+    <p>
+      A great About Us page helps builds trust between you and your customers. The more content you provide about you
+      and your business, the more confident people will be when purchasing from your store.
+    </p>
+    <p>Your About Us page might include:</p>
+
+    <ul>
+      <li>Who you are</li>
+      <li>Why you sell the items you sell</li>
+      <li>Where you are located</li>
+      <li>How long you have been in business</li>
+      <li>How long you have been running your online shop</li>
+      <li>Who are the people on your team</li>
+      <li>Contact information</li>
+      <li>Social links (Twitter, Facebook)</li>
+    </ul>
   </div>
 </div>
 
@@ -139,10 +55,7 @@
   "tag": "section",
   "class": "section",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer"
-    ]
+    "groups": ["header", "footer"]
   },
   "settings": [
     {
