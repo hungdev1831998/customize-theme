@@ -14,41 +14,6 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="about page-width page-width--narrow section-{{ section.id }}-padding">
-    {%- if section.settings.heading != blank -%}
-      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        {{ section.settings.heading }}
-      </h2>
-    {%- else -%}
-      <h2 class="visually-hidden">{{ 'templates.about.form.title' | t }}</h2>
-    {%- endif -%}
-    {%- liquid
-      assign about_form_class = 'isolate'
-      if settings.animations_reveal_on_scroll
-        assign about_form_class = 'isolate scroll-trigger animate--slide-in'
-      endif
-    -%}
-
-    <p>
-      A great About Us page helps builds trust between you and your customers. The more content you provide about you
-      and your business, the more confident people will be when purchasing from your store.
-    </p>
-    <p>Your About Us page might include:</p>
-
-    <ul>
-      <li>Who you are</li>
-      <li>Why you sell the items you sell</li>
-      <li>Where you are located</li>
-      <li>How long you have been in business</li>
-      <li>How long you have been running your online shop</li>
-      <li>Who are the people on your team</li>
-      <li>Contact information</li>
-      <li>Social links (Twitter, Facebook)</li>
-    </ul>
-  </div>
-</div>
-
 {% schema %}
 {
   "name": "t:sections.about-form.name",

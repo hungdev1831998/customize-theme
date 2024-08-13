@@ -3,8 +3,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "form": {
@@ -13,13 +13,44 @@
         "heading": "",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_8Ct34m": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_8THefw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.<\/p><p>Your About Us page might include:<\/p><ul><li>Who you are<\/li><li>Why you sell the items you sell<\/li><li>Where you are located<\/li><li>How long you have been in business<\/li><li>How long you have been running your online shop<\/li><li>Who are the people on your team<\/li><li>Contact information<\/li><li>Social links (Twitter, Facebook)<\/li><\/ul><p>To edit the content on this page, go to the <a href=\"https:\/\/digital-world-8.myshopify.com\/admin\/pages\">Pages<\/a> section of your Shopify admin.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_8THefw"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img-1.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "image_with_text_8Ct34m"
   ]
 }
