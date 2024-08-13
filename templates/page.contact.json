@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -9,6 +18,17 @@
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "text_4ktama": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sed vestibulum faucibus felis, sit amet facilisis tellus. Aliquam erat volutpat. Sed consectetur ipsum velit, quis rhoncus libero egestas eget.<\/p><ul><li> Address: 474 Ontario St Toronto, ON M4X 1M7 Canada<\/li><li> Opening hours<\/li><li> Email: support@tadathemes.com<\/li><li> Phone: (+123)345 678 xxx<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4ktama"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h1",
