@@ -187,7 +187,7 @@
       "clear_all": "Remove all",
       "from": "From",
       "filter_and_sort": "Filter and sort",
-      "filter_by_label": "Filter:",
+      "filter_by_label": "Filter by",
       "filter_button": "Filter",
       "filters_selected": {
         "one": "{{ count }} selected",
@@ -207,7 +207,7 @@
       },
       "reset": "Reset",
       "sort_button": "Sort",
-      "sort_by_label": "Sort by:",
+      "sort_by_label": "Sort by",
       "to": "To",
       "clear_filter": "Remove filter"
     }
